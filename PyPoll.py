@@ -64,7 +64,7 @@ with open(file_to_save, "w") as txt_file:
     # Determine the percentage of votes for each candidate by looping through the counts.
     # Iterate through the candidate list.
     for candidate_name in candidate_votes:
-            # Retrieve vote count of a candidate.
+        # Retrieve vote count of a candidate.
         votes = candidate_votes[candidate_name]
         # Calculate the percentage of votes.
         vote_percentage = float(votes) / float(total_votes) * 100
@@ -98,6 +98,6 @@ with open(file_to_save, "w") as txt_file:
     f"Winning Percentage: {winning_percentage:.1f}%\n"
     f"-------------------------\n")
     print(winning_candidate_summary)
-    
+
     # Save the winning candidate's results to the text file.
     txt_file.write(winning_candidate_summary)    
